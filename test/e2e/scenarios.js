@@ -38,5 +38,16 @@ describe('my app', function() {
         toMatch(/partial for view 2/);
     });
 
+  describe('notifications', function() {
+    it('should notify user of unread message', function() {
+      expect(userMessages).toContain()
+      expect($('#unread')).toBeVisible();
+    });
+
+    it('should show the correct number of unread messages', function() {
+      expect(userMessages.length).toEqual($('#unread p'));
+    })
+  })
+
   });
 });
