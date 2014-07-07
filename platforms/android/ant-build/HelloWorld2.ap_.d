@@ -113,8 +113,17 @@
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/js/services.js \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/partials/partial1.html \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/partials/partial2.html \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/com.phonegap.plugins.videoplayer \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/jaeger.Html5Video \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.file \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/com.phonegap.plugins.videoplayer/www \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/com.phonegap.plugins.videoplayer/www/videoplayer.js \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/jaeger.Html5Video/www \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/jaeger.Html5Video/www/Html5Video.js \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.file/www \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js \

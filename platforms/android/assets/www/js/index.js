@@ -46,12 +46,13 @@ var app = {
     }
 };
 
+var fp;
 var testingDownload = {
   test: function() {
     document.addEventListener('deviceready', function() {
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
         function fileSystemSuccess(fileSystem) {
-            var download_link = "https://conemo.northwestern.edu/lesson_api/lessons.json";
+            var download_link = "http://techslides.com/demos/sample-videos/small.mp4";
             ext = download_link.substr(download_link.lastIndexOf('.') + 1);
 
             var rootdir = fileSystem.root.toURL(); // root path of phone
@@ -83,5 +84,16 @@ function filetransfer(download_link,fp) {
             // console.log("upload error code" + error.code);
         }
     );
+}
+
+function playVideo() {
+    // console.log(fp);
+    // cordova.plugins.videoPlayer.play(fp);
+    var video = document.getElementById("video");
+    var source = document.createElement("source");
+
+    source.setAttribute('src',fp);
+    video.appendChild(source);
+    video.play();
 };
 

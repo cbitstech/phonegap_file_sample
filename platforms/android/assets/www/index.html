@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="css/app.css"/>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  <script type="text/javascript" charset="utf-8" src="videoplayer.js"></script>
+
+
 
 </head>
   <ul class="menu">
@@ -29,8 +32,8 @@
 
   <div>Angular seed app: v<span app-version></span></div>
 
-  <span id="ready"></span>
-
+  <button onclick="playVideo()">Play</button>
+  <video id="video" style="max-width:100%;" controls></video>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->

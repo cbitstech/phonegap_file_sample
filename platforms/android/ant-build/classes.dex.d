@@ -6,6 +6,8 @@
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/com/example/hello/R$string.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/com/example/hello/R$xml.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/com/example/hello/R.class \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/com/phonegap/plugins/videoplayer/VideoPlayer.class \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/file/ContentFilesystem.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/file/DirectoryManager.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/file/EncodingException.class \
@@ -60,4 +62,6 @@
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$TrackingInputStream.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileUploadResult.class \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/plugin/Html5Video$1.class \
+/Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/classes/org/apache/cordova/plugin/Html5Video.class \
 /Users/jeaniechung/projects/phonegap_file_sample/platforms/android/ant-build/dexedLibs/classes-020c9178355a6fefb02fb4bb0af91a27.jar \
