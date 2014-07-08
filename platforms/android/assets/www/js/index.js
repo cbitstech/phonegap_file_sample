@@ -43,32 +43,9 @@ var app = {
     },
     test: function() {
         console.log("THIS IS A TEST I AM TESTING");
-    }
+    },
+    failureTally: 0
 };
-
-var fp;
-var testingDownload = {
-  test: function() {
-    document.addEventListener('deviceready', function() {
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
-        function fileSystemSuccess(fileSystem) {
-            var download_link = "http://techslides.com/demos/sample-videos/small.mp4";
-            ext = download_link.substr(download_link.lastIndexOf('.') + 1);
-
-            var rootdir = fileSystem.root.toURL(); // root path of phone
-            // var fp = rootdir.fullPath; 
-
-            fp = rootdir + "downloaded_file" + "." + ext; // file path and name
-            // call download
-            filetransfer(download_link, fp);
-        }
-        function fileSystemFail(evt) {
-            //Unable to access file system
-            alert(evt.target.error.code);
-        }
-    });
-  }  
-}
 
 function filetransfer(download_link,fp) {
     var fileTransfer = new FileTransfer();
@@ -80,15 +57,57 @@ function filetransfer(download_link,fp) {
         },
         function(error) {
             console.log("download error source " + error.source);
-            // console.log("download error target " + error.target);
-            // console.log("upload error code" + error.code);
+            app.failureTally++;
+            console.log(app.failureTally);
         }
     );
 }
 
+
+var fp;
+var files = {
+  download: function() {
+    document.addEventListener('deviceready', function() {
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
+        function fileSystemSuccess(fileSystem) {
+            var download_links = [
+                "http://techslides.com/demos/sample-videos/small.mp4",
+                "http://techslides.com/demos/sample-videos/small.mp4",
+                "http://techslides.com/demos/sample-videos/small.mp4"
+            ];
+            var numDownloads = download_links.length;
+            fp = [];
+            for (var i = 0; i < numDownloads; i++) {
+                ext = download_links[i].substr(download_links[i].lastIndexOf('.') + 1);
+
+                var rootdir = fileSystem.root.toURL(); // root path of phone
+                // var fp = rootdir.fullPath; 
+
+                fp.push(rootdir + "downloaded_video" + i + "." + ext); // file path and name
+                // call download
+                filetransfer(download_links[i], fp[i]);
+            };
+            setTimeout(function() {
+                if (app.failureTally === 0) {
+                    alert("Download Complete!");
+                }
+                else {
+                    alert("Something went wrong with the download and people have been notified.");
+                }
+                app.failureTally = 0;
+            }, 500);
+
+        }
+        function fileSystemFail(evt) {
+            //Unable to access file system
+            alert(evt.target.error.code);
+        }
+    });
+  }  
+}
+
+
 function playVideo() {
-    // console.log(fp);
-    // cordova.plugins.videoPlayer.play(fp);
     var video = document.getElementById("video");
     var source = document.createElement("source");
 

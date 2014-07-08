@@ -31,9 +31,7 @@
   <div ng-view></div>
 
   <div>Angular seed app: v<span app-version></span></div>
-
-  <button onclick="playVideo()">Play</button>
-  <video id="video" style="max-width:100%;" controls></video>
+  <button onclick="files.download()">Download Files</button>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -47,7 +45,6 @@
   <script src="js/index.js"></script>
   <script type="text/javascript">
     app.initialize();
-    testingDownload.test();
   </script>
 </body>
 </html>
